@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101e1b">
+  <meta name="description" content="Flores amarillas para una gran amiga. Un pequeño detalle para alegrarte el día.">
+  <title>Flores para una gran amiga</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="petals.js" defer></script>
+</head>
+<body>
+  <canvas id="petal-background" aria-hidden="true"></canvas>
+  <main>
+    <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+      <div class="little-flower" aria-hidden="true">✻</div>
+      <p class="eyebrow"></p>
+      <h1 id="welcome-title">Unas flores<br>para alegrarte el día.</h1>
+      <p class="intro">¡Para que no digas que te quedaste sin flores!</p>
+      <button id="open" class="primary">Abrir mi regalo <span aria-hidden="true">↗</span></button>
+    </section>
+    <section id="garden" class="garden" aria-labelledby="garden-title" hidden>
+      <div class="dedication">
+        <p class="eyebrow" id="recipient">Gracias por estar ahí</p>
+        <h1 id="garden-title">Te mereces<br><em>cosas bonitas.</em></h1>
+        <p id="message">Por las conversaciones y el apoyo que siempre me das.<br>¡Qué bueno tener a alguien como tú!</p>
+      </div>
+      <canvas id="flowers" role="img" aria-label="Hello Kitty sostiene un ramo de flores amarillas cuyos pétalos se abren uno a uno."></canvas>
+      <p id="image-error" role="status" hidden>No se pudo cargar la ilustración. Intenta recargar la página.</p>
+      <footer><p id="signature">¡Que hoy te pasen cosas bonitas!</p><button id="replay" class="text-button">Volver a florecer ↻</button></footer>
+    </section>
+    <noscript>Activa JavaScript para abrir tu regalo y ver las flores amarillas.</noscript>
+  </main>
+</body>
+</html>
